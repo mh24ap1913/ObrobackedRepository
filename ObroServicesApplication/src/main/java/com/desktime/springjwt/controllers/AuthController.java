@@ -1,8 +1,6 @@
 package com.desktime.springjwt.controllers;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.validation.Valid;
@@ -20,8 +18,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.desktime.springjwt.models.ERole;
-import com.desktime.springjwt.models.Role;
 import com.desktime.springjwt.models.User;
 import com.desktime.springjwt.payload.request.LoginRequest;
 import com.desktime.springjwt.payload.request.SignupRequest;
@@ -97,4 +93,5 @@ public class AuthController {
 
 		return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
 	}
+	
 }
